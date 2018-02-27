@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-client
+server:
+ port: 62001
+ spring:
+  cloud:
+    config:
+      label: master
+      profile: dev
+      url: localhost:62000/
